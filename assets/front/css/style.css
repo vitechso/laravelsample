@@ -1,0 +1,844 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/*login page*/
+
+.parsley-errors-list li{
+    list-style: none;
+    color: red;
+    font-size: 12px;
+}
+ul.parsley-errors-list{
+    padding: 0; 
+}
+
+
+
+
+.login-section {
+    height: 100vh;
+    background: linear-gradient(140.86deg, #C6C6C8 20.42%, #73747E 97.94%);
+    position: relative;
+}
+.login-block {
+    text-align: center;
+    background: linear-gradient(180deg, #404252 0%, #101425 100%);
+    border-radius: 13px;
+    padding: 50px;
+}
+.custom-color {
+    background-color: #585C6A !important;
+    border: none;
+    color: #fff !important;
+}
+.form-block input::placeholder {
+    color: #ccc;
+    font-size: 13px;
+}
+input.custom-input:focus {
+    color: #495057;
+    background-color: #585C6A;
+    outline: 0;
+    box-shadow: 0px 0px 1px 1px #F6D598;
+    /*border: 1px solid #F6D598;*/
+}
+.logo-block img {
+    width: 80%;
+}
+.btn-block {
+    display: flex;
+    justify-content: space-between;
+}
+.custom-btn {
+    background-color: #99A1A9;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+    padding: 8px 20px;
+    font-size: 13px;
+}
+.custom-btn:hover {
+    background-color: #F6D598;
+    color: #fff;
+}
+.custom-btn:hover .check{
+    opacity: 1;
+}
+.adjust-form {
+    margin-bottom: 1.5rem;
+}
+.adjust-form2 {
+    margin-bottom: 2rem;
+}
+.forgot-block a {
+    color: #585C6A;
+    text-decoration: none;
+}
+.forgot-block a {
+    font-size: 13px;
+}
+.check {
+    margin-right: 5px;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+.copyright-block {
+    text-align: center;
+}
+.copyright-block p {
+    margin: 0;
+    color: #fff;
+    font-size: 12px;
+}
+.custom-btn {
+    background-color: #99A1A9;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+    padding: 8px 40px 8px 20px;
+    font-size: 13px;
+}
+/*login page end*/
+
+/*dashbord page*/
+
+.wrapper {
+    position: relative;
+    top: 0;
+    background: linear-gradient(156.63deg, #EAEAEA 21.35%, #D2D2D2 93.18%);
+    display: inline-block;
+    width: 100%;
+    min-height: 100vh;
+}
+
+/*sitebar css end*/
+
+.sitenav {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    bottom: 0;
+    width: 260px;
+    left: 0;
+    z-index: 1030;
+    background: linear-gradient(180deg, #3F4151 0%, #111526 100%);
+    transition: all 0.5s ease-in-out;
+    opacity: 1;
+}
+
+.closebtn {
+    position: absolute;
+    right: 0;
+    color: #fff;
+    font-size: 24px;
+    padding: 0px 10px;
+    text-decoration: none;
+    display: none;
+}
+.closebtn:hover {
+    color: #fff;
+    text-decoration: none;
+}
+.sitebar-logo {
+    text-align: center;
+    padding: 50px 10px;
+}
+.sitebar-logo svg {
+    width: 150px;
+}
+.sitebar-logo img {
+    width: 150px;
+}
+
+.navigation-ul {
+    margin: 0;
+    padding: 0;
+}
+.navigation-ul li:before {
+    content: '';
+    position: absolute;
+    background-color: #F6D598;
+    width: 5px;
+    height: 100%;
+    border-radius: 0px 5px 5px 0px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+.navigation-ul li.active:before {
+    opacity: 1;
+}
+.navigation-ul li {
+    list-style-type: none;
+    margin-bottom: 15px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+.navigation-ul li.active {
+    background-color: #161D26;
+}
+.navigation-ul li.active svg path {
+    stroke: #F6D598;
+}
+.navigation-ul li:hover {
+    background-color: #161D26
+}
+.navigation-ul li:hover:before {
+    opacity: 1;
+}
+.navigation-ul li:hover svg path {
+    stroke: #F6D598;
+}
+
+.navigation-ul li:hover svg .group-svg {
+    fill: #F6D598;
+}
+
+.navigation-ul li.active .group-svg {
+    fill: #F6D598;
+}
+
+.navigation-ul li a {
+    display: block;
+    padding: 10px 10px 10px 20px;
+    color: #fff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.navigation-ul i {
+    float: right;
+    margin-right: 40px;
+    padding-top: 6px;
+    transition: all 0.5s ease-in-out;
+    font-size: 12px;
+    opacity: 0;
+}
+.navigation-ul li:hover i {
+    margin-right: 20px;
+    opacity: 1;
+}
+.navigation-ul svg {
+    margin-right: 12px;
+    min-width: 30px;
+}
+.logout-block p {
+    color: #6F7377;
+    font-size: 12px;
+    margin: 0;
+    padding: 5px;
+}
+
+.logout-block h5 {
+    font-size: 12px;
+    color: #99A1A9;
+    padding-bottom: 10px;
+}
+
+.logout-block {
+    text-align: center;
+    padding: 20px;
+}
+.logout-block a {
+    font-size: 14px;
+    color: #F6D598;
+    text-decoration: underline;
+}
+.mtop-5 {
+    margin-top: 5rem;
+}
+
+/*sitebar css end*/
+
+
+/*main-panel*/
+.header {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #3d3f4f;
+    position: fixed;
+    top: 0;
+    width: calc(100% - 260px);
+    height: 40px;
+    align-items: center;
+    padding-right: 20px;
+    z-index: 1;
+    display: none;
+}
+.menulines {
+    color: #fff;
+    cursor: pointer;
+}
+.main-panel {
+    position: relative;
+    float: right;
+    width: calc(100% - 260px);
+}
+.content {
+    padding: 0px 20px 20px;
+}
+.page-heading {
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    padding: 30px 0px;
+}
+.page-heading i {
+    color: #374556;
+    margin-right: 8px;
+    font-size: 20px;
+}
+.page-heading h3 {
+    margin: 0;
+    font-size: 24px;
+    color: #374556;
+    line-height: 20px;
+    font-weight: 400;
+}
+.page-heading h4 {
+    padding: 0px 10px;
+    border-right: 2px solid #000;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 20px;
+    margin: 0;
+}
+.page-heading h5 {
+    padding: 0px 10px;
+    color: #4c4c4c;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 20px;
+    margin: 0;
+}
+.page-Description {
+    padding: 20px;
+    background-color: #404251;
+    color: #B6B4B4;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+}
+.page-Description p {
+    margin: 0;
+    font-size: 14px;
+}
+.page-Description img {
+    width: 40px;
+    margin-right: 20px;
+}
+
+.page-Description svg {
+    width: 40px;
+    margin-right: 20px;
+}
+
+.file-nav-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+}
+.file-block svg {
+    width: 40px;
+}
+.file-block img {
+    width: 40px;
+}
+.filter-btn ul {
+    margin: 0;
+    padding: 0;
+}
+.filter-btn ul li {
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 15px;
+    width: 80px;
+    text-align: center;
+}
+.filter-btn ul li.active a {
+    color: #F6D598;
+}
+.filter-btn ul li:hover a {
+    color: #F6D598;
+}
+.filter-btn ul li a {
+    padding: 5px;
+    background-color: #404251;
+    display: block;
+    font-size: 13px;
+    color: #C6CCD2;
+    text-decoration: none;
+    border-radius: 7px;
+    transition: all 0.3s ease-in-out;
+}
+.inline-table {
+    display: inline-table;
+}
+.custom-table thead th {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 1px;
+    background-color: #404251;
+    color: #D9D9D9;
+    font-family: sans-serif;
+    padding: 12px 8px;
+}
+.custom-table tbody td {
+    font-size: 12px;
+    line-height: 16px;
+    padding: 20px 10px;
+    color: #404251;
+    font-weight: bold;
+}
+.my-table-striped tbody tr:nth-of-type(odd) {
+    background-color: #EEEEEE;
+}
+.my-table-striped tbody tr:nth-of-type(even) {
+    background-color: #fff;
+}
+span.check-adjust {
+    position: relative;
+    top: 4px;
+}
+.custom-control-input:checked~.custom-control-label::before {
+    color: #fff;
+    border-color: #F6D598;
+    background-color: #F6D598;
+    outline: none;
+    box-shadow: none;
+}
+.custom-control-input:focus:not(:checked)~.custom-control-label::before {
+    border-color: #F6D598;
+}
+
+.custom-control-input:focus~.custom-control-label::before {
+    box-shadow: 0 0 5px #F6D598;
+}
+.status i {
+    margin-left: 10px;
+    font-size: 12px;
+}
+.action i {
+    margin: 5px;
+    color: #4c4c4c;
+    font-size: 14px;
+}
+/*main-panel end*/
+
+/*dashbord page end*/
+
+
+/*Manager Safety Pact page*/
+
+.custom-nav-tabs {
+    background: #404251;
+    padding-left: 15px;
+    border-radius: 5px 5px 0px 0px;
+    font-family: sans-serif;
+}
+.custom-nav-tabs li {
+    margin-bottom: 0 !important;
+    
+}
+.custom-nav-tabs li a {
+    display: block;
+    border-radius: 0 !important;
+    padding: 10px 30px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    position: relative;
+    border: 0px !important;
+}
+.custom-nav-tabs li a.active {
+    color: #F6D598 !important;
+    background-color: #161d26 !important;
+    border-color: #161d26 #161d26 #161d26 !important;
+}
+
+.custom-nav-tabs li a.active:before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 90%;
+    height: 3px;
+    background-color: #F6D598;
+    bottom: 0;
+    transform: translate(-50%, 0%);
+    left: 50%;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.page-Description h5 {
+    font-size: 14px;
+    color: #DEDDDD;
+    line-height: 20px;
+    margin: 0;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.custom-tab-content {
+    background-color: #fff;
+    padding: 30px 0px 20px;
+}
+.inner-title-box p {
+    font-size: 15px;
+    color: #404251;
+    line-height: 20px;
+    font-weight: 500;
+    margin: 0;
+}
+.inner-title-box span {
+    font-weight: 600;
+    margin-right: 15px;
+    letter-spacing: 1px;
+}
+.inner-title-box {
+    background: #E9E8E8;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+}
+.custom-table2 thead th {
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background-color: #404251;
+    color: #DEDDDD;
+    line-height: 19px;
+}
+.custom-table2 tbody td {
+    font-size: 15px;
+    line-height: 19px;
+    padding: 10px;
+    color: #404251;
+    font-weight: 500;
+}
+.table-striped-copy tbody tr:nth-of-type(odd) {
+    background-color: #F4F2F2;
+}
+.table-striped-copy tbody tr:nth-of-type(even) {
+    background-color: #E9E8E8;
+}
+
+.theme-form-control {
+    background-color: #e9e8e8;
+    border: none;
+    font-size: 15px;
+}
+.theme-form-control:focus {
+    color: #495057;
+    background-color: #e9e8e8;
+    border-color: #404251 !important;
+    outline: 0;
+    box-shadow: none !important;
+}
+.font-adjust {
+    font-size: 15px;
+}
+.form-control:focus {
+    border-color: #F6D598; 
+    outline: 0 !important;
+    box-shadow: none !important; 
+}
+.mini-form-block {
+    background: #404251;
+    padding: 15px;
+    border-radius: 6px;
+}
+.mini-form-block h5 {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 19px;
+    color: #DBE1E8;
+    letter-spacing: 1px;
+}
+.button-block button {
+    margin-left: 15px;
+}
+
+.button-block {
+    margin: 15px 0px;
+    text-align: right;
+}
+
+.safety-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    align-items: center;
+    background: #3f4151;
+    color: #fff;
+}
+.section-title h5 {
+    font-size: 15px;
+    margin: 0;
+    line-height: 19px;
+    letter-spacing: 1px;
+}
+.clause-input-block input {
+    font-size: 13px;
+    height: 50px;
+}
+.form-label {
+    color: #bbb;
+    font-size: 11px;
+    margin: 0;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.font-adjust {
+    font-size: 12px;
+    padding-right: 0;
+}
+/*Manager Safety Pact page end*/
+
+/*user page*/
+.pad-0 {
+    padding: 0px !important;
+}
+.pl-0 {
+    padding-left: 0 !important;
+}
+.bg-lite {
+    background: linear-gradient(156.63deg, #EAEAEA 21.35%, #D2D2D2 93.18%);
+}
+.view-detail a {
+    color: #404251;
+    text-decoration: underline;
+}
+/*user page model css*/
+
+.pact_assignments_header {
+    background: #404251;
+    display: flex;
+    align-items: center;
+}
+.pact_assignments_heading {
+    display: flex;
+    align-items: center;
+    font-family: roboto;
+}
+.pact_assignments_heading h5 {
+    padding: 0px 10px;
+    color: #4c4c4c;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 20px;
+    margin: 0;
+    color: #FBFDFF;
+}
+
+.pact_assignments_heading h4 {
+    padding-right: 10px;
+    border-right: 2px solid #FBFDFF;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 20px;
+    margin: 0;
+    color: #FBFDFF;
+}
+.close-btn {
+    color: #fff;
+    border: 2px solid #fff !important;
+    opacity: 1;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    padding: 0 !important;
+    margin: 0 !important;
+    text-shadow: none !important;
+}
+.close-btn:hover {
+    opacity: 1 !important;
+    color: #fff;
+}
+.action-btn {
+    padding: 15px 0px !important;
+}
+.action-btn button {
+    background-color: #BFA87F;
+    border: 0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+}
+.add-admin-heading-block {
+    border-bottom: 0;
+    font-family: sans-serif;
+}
+.add-admin-heading-block h3 {
+    font-size: 18px;
+    color: #d8d8d8;
+    letter-spacing: 1px;
+}
+h3.modal-title span {
+    font-weight: 600;
+    color: #fff;
+}
+h3.modal-title i {
+    color: #F6D598;
+    margin-right: 15px;
+}
+.bg-theme {
+    background: linear-gradient(180deg, #404252 0%, #101425 100%);
+}
+.place-adjuct-center::placeholder {
+    color: #cecece;
+    text-transform: capitalize;
+    font-size: 12px !important;
+    letter-spacing: 1px;
+}
+
+.pop-adjst {
+    font-size: 12px;
+    height: 38px;
+    color: #cecece !important;
+}
+/*select css*/
+/* Reset Select */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: #2c3e50;
+  background-image: none;
+}
+/* Remove IE arrow */
+select::-ms-expand {
+  display: none;
+}
+/* Custom Select */
+.select {
+  position: relative;
+    display: flex;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+/* Arrow */
+.select::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    padding: 0 1em;
+    color: #f6d598;
+    cursor: pointer;
+    pointer-events: none;
+    -webkit-transition: .25s all ease;
+    -o-transition: .25s all ease;
+    transition: .25s all ease;
+    transform: translate(0%, -50%);
+    background-image: url(http://webilogic.com.md-in-16.webhostbox.net/phonepact/assets/front/svg/down_arrow.svg);
+    width: 15px;
+    height: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* Transition */
+.select:hover::after {
+  color: #f6d598;
+}
+/*select css*/
+.hight-adjust {
+    font-size: 14px;
+    height: 38px;
+    color: #495057 !important;
+    letter-spacing: 1px;
+    cursor: pointer;
+    background-color: #fff !important;
+    border: 1px solid #ced4da !important;
+}
+.lock {
+    position: relative;
+}
+.lock i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translate(0px, -50%);
+    color: #f6d598;
+    font-size: 14px;
+}
+
+.popup-center {
+    padding: 120px 0px;
+}
+/*user page model css*/
+/*user page end*/
+
+.remove-btn {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    background-color: #e9e8e8;
+    border-radius: 5px;
+}
+.remove-btn span {
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.add-row-btn {
+    display: flex;
+    align-items: center;
+    padding: 7px 10px;
+    background-color: #d6bb88;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    border: 0;
+}
+.add-row-btn:focus {
+    outline: none;
+}
+.add-row-btn:hover {
+    text-decoration: none;
+    color: #fff;
+}
+.add-row-btn i {
+    color: #fff;
+    margin-right: 5px;
+}
+
+.popup-select-block {
+    background-color: #585c6a !important;
+    border: 0 !important;
+    color: #cecece !important;
+    font-size: 12px !important;
+}
+th.w300 {
+    width: 300px;
+}
+.add-action a {
+    display: inline-block;
+    padding: 8px 10px;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    height: calc(1.5em + .75rem + 2px);
+    color: #444;
+}
+.f-14 {
+    font-size: 14px;
+    letter-spacing: 1px;
+    min-height: 38px;
+}

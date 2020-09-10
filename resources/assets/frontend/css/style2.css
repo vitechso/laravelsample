@@ -1,0 +1,107 @@
+/*registration page*/
+.main-footer-btn button:active {
+    background-color: #ff0000 !important;
+    border-color: #ff0000 !important;
+}
+.custom-input::placeholder {
+	color: #a2a2a2;
+}
+.btn-effect {
+    background-color: transparent !important;
+    color: #444;
+    border-color: #ff0000;
+    border-radius: 0;
+    transition: all 0.4s ease-in-out;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 8px 15px !important;
+    margin-right: 20px;
+}
+.btn-effect:hover {
+	box-shadow: 0px 0px 0px 20px inset #ff0000;
+	color: #fff;
+}
+.custom-form label {
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.light-border {
+    border-color: #b5b5b5 !important;
+}
+input:focus {
+    box-shadow: none !important;
+    outline: none !important;
+}
+button:focus {
+    box-shadow: none !important;
+    outline: none !important;
+}
+textarea:focus {
+    box-shadow: none !important;
+    outline: none !important;
+}
+.my-textarea {
+    border-color: #b5b5b5 !important;
+}
+.address-block h6 {
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #212529 !important;
+}
+
+/*single-page*/
+
+.product-img-block img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.proudet-detail p {
+    font-size: 16px;
+}
+.add-bag a {
+    background-color: #ff0000 !important;
+}
+
+.social-icon {
+    margin: 0;
+    padding: 0;
+}
+.social-icon li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.social-icon li a {
+    display: block;
+    transition: all 0.5s ease-in-out;
+}
+.social-icon li a i {
+    font-size: 20px;
+    color: #444;
+    transition: all 0.5s ease-in-out;
+}
+.social-icon li a:hover i {
+    color: #ff0000;
+    transform: rotate(360deg);
+}
+.proudet-price {
+    color: #ff0000;
+}
+.pad-0 {
+	padding: 0 !important;
+}
+.my-tab-ul li a {
+    color: #444;
+}
+.my-tab-ul li a.active {
+    color: #ff0000 !important;
+    border-color: #ff0000 #ff0000 #fff !important;
+}
+.my-tab-ul li a {
+    padding: 10px 50px;
+}
+.privacy-policy-block {
+    margin-bottom: 50px;
+}
